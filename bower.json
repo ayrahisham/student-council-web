@@ -1,0 +1,7 @@
+{
+    "name": "CSCI110-A1-5841331_YuCheng__5841549_Suhaira_", "version": "1.0.0", "main": "path/to/main.css", "ignore": [
+        ".jshintrc", "**/*.txt"
+    ], "dependencies": {
+    }, "devDependencies": {
+    }
+}

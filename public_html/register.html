@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <!--
+       Title is needed to define the display in the user's browser tool bar, 
+       search engine and when user adds the page to favorites.
+       -->
+        <title>REGISTER</title>
+        <!--
+        Meta tag is needed for machine readable formats. Elements below such as 
+        viewport, description, keywords and author are used for specification.
+        Meta data too can function similarly to title.
+        Meta viewport is used to take control of the visibility area of a web page.
+        -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="UOW Student Council">
+	<meta name="keywords" content="Interest Group,Student,SIM,UOW">
+	<meta name="author" content="uow">
+        <!--
+        Reference link for cascading style sheet; usage of div tags reference.
+        -->
+        <link rel="stylesheet" type="text/css" href="mystyle.css"/>  
+    </head>
+    
+    <body background="images/webbackground.jpg">
+        <!--
+        HTML division class attributes allow user to define element styles 
+        within the same class.
+        -->     
+        <div class="banner">
+            <a href="https://www.uow.edu.au/index.html">
+                <img src="images/uowlogo.jpg" alt="uowlogo" width="320" height= "150" align="top-left"></a>
+        </div>
+
+        <div class="intro">
+            <h1>UOW STUDENT COUNCIL REGISTER FORM</h1>
+        </div>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <a href="index.html" class="active">
+                            <img src="images/home.ico" alt="home" width="100" height="100"/><h1>HOME</h1></a>
+                    </div>
+                </td>   
+                <td rowspan="10" colspan="4">
+                    <form name="registerMe" onsubmit="return validateRegistrationForm()" 
+                          style="background-image: url('images/registrationbackground.jpg'); 
+                          background-size: 80%; height: 1450px">
+                        <div class="registrationform">
+                            <img src="images/studentcouncilicon.png" alt="scicon" width="350" height="150">
+                            <h2><i>Thank You For Your Interest In Us! :DD</i></h2>
+                            <h4>Please spare 5 minutes of your time to fill up this form!</h4>
+                        </div>
+                        <table>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your Name:
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" name="rname" size="30"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your gender: 
+                                    </div>
+                                </td>   
+                                <td> 
+                                    <div class="registrationform">
+                                        <input type="radio" name="gender" value="male" checked> Male<br>
+                                        <input type="radio" name="gender" value="female"> Female<br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your race: 
+                                    </div>
+                                </td>   
+                                <td> 
+                                    <div class="registrationform">
+                                        <input type="radio" name="race" value="Chinese" checked> Chinese<br>
+                                        <input type="radio" name="race" value="Malay"> Malay<br>
+                                        <input type="radio" name="race" value="Indian"> Indian<br>
+                                        <input type="radio" name="race" value="Eurasian"> Eurasian<br>
+                                        Other: <input type="text" name="race" size="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your religion: 
+                                    </div>
+                                </td>   
+                                <td> 
+                                    <div class="registrationform">
+                                        <input type="radio" name="religion" value="Christian"> Christian<br>
+                                        <input type="radio" name="religion" value="Islam"> Islam<br>
+                                        <input type="radio" name="religion" value="Catholic"> Catholic<br>
+                                        <input type="radio" name="religion" value="Buddhist"> Buddhist<br>
+                                        Other: <input type="text" name="religion" size="30"/>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your Course: 
+                                    </div>
+                                </td>   
+                                <td>
+                                    <div class="registrationform">
+                                         <select name="rcourse">
+                                            <option value="-1">[Please choose yours]</option>
+                                            <option value="bscp">Bachelor of Science (Psychology)</option>
+                                            <option value="bis">Bachelor of Business Information Systems</option>
+                                            <option value="bit">Bachelor of Information Technology</option>
+                                            <option value="bscdss">Bachelor of Computer Science (Digital Systems Security)</option>
+                                            <option value="bscmgd">Bachelor of Computer Science (Multimedia & Game Development)</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your Phone Number:<br>
+                                        - Our primary communication :)
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="rphonenumber" size="30" required/>
+                                 </td>
+                            </tr>
+                            <tr>
+                                 <td colspan="2">
+                                    <div class="registrationform">
+                                        Your Email:<br>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="remail" size="30"/>
+                                 </td>
+                            </tr>
+                             <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Your Address:<br>
+                                        - In case, we have newsletters to send you :)
+                                    </div>
+                                </td>   
+                                <td>
+                                    <textarea name="raddress" cols="40" rows="5"></textarea>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *Emergency Contact: 
+                                    </div>
+                                </td>   
+                                <td> 
+                                    <div class="registrationform">
+                                        <input type="radio" name="rperson" value="father" checked> Father<br>
+                                        <input type="radio" name="rperson" value="mother"> Mother<br>
+                                        <input type="radio" name="rperson" value="sibling"> Sister/Brother<br>
+                                        <input type="radio" name="rperson" value="Guardian"> Guardian<br>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td colspan="2">
+                                    <div class="registrationform">
+                                        *Emergency Phone Number:
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <input type="text" name="rephonenumber" size="30" required/>
+                                 </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="registrationform">
+                                        *How often can you commit in SC in a week?
+                                    </div>
+                                 </td>
+                                <td>
+                                    <div class="registrationform">
+                                         <select name="rcommit">
+                                            <option value="thrice"> Thrice</option>
+                                            <option value="twice"> Twice</option>
+                                            <option value="once"> Once</option>
+                                      </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <div class="registrationformS">
+                                        <input type="submit" value="Sign Me Up!" align="center" size="40">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <script src="myjavascript.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <a href="events.html">
+                            <img src="images/events.jpg" alt="events" width="110" height="110"/><h1>EVENTS</h1></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <a href="news.html">
+                            <img src="images/news.jpg" alt="news" width="100" height="100"/><h1>NEWS</h1></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <a href="elections.html">
+                            <img src="images/elections.jpg" alt="elections" width="100" height="100"/><h1>ELECTIONS</h1></a>
+                    </div>
+                </td>
+            <tr>
+                <td>
+                    <div class="menu">
+                     <a href="profile.html">
+                            <img src="images/profiles.jpg" alt="profiles" height="100"/><h1>PROFILE</h1></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">                       
+                    <a href="gallery.html">
+                            <img src="images/gallery.jpg" alt="gallery" width="100" height="100"/><h1>GALLERY</h1></a>
+                                <button class="gallerydropbtn"></button>
+                                <div class="gallerydropdown">
+                                    <a href="galleryMeetings.html" class="active"><h2>COUNCIL MEETINGS</h2></a>
+                                    <a href="galleryTB.html"><h2>TEAM BONDING</h2></a>
+                                    <a href="gallerySchAct.html"><h2>SCHOOL ACTIVITIES</h2></a>
+                                    <a href="galleryHuman.html"><h2>HUMANITARIAN</h2></a>                
+                                </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                        <a href="contactUs.html">
+                            <img src="images/contactus.jpg" alt="contactus" width="100" height="100"/><h1>CONTACT US</h1></a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="menu">
+                    <a href="https://goo.gl/s77fvj">
+                            <img src="images/sim.jpg" alt="sim" width="100" height="100"/><h1>SIM</h1></a>
+                    </div>
+                </td>
+            </tr>
+        </table>    
+
+        <footer>
+            <table> 
+                <tr>
+                    <td width="100%">
+                        <div class="footer">
+                            <p>© 2017 University of Wollongong Student Council. All rights reserved.</p>
+                        </div>
+                    </td>              
+                    <td>
+                        <a href="https://www.facebook.com/UOW/">
+                            <img src="images/facebook.png" alt="twitter" width="40" height="40"></a>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/UOW?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <img src="images/twitter.png" alt="twitter" width="60" height="60"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/uow/?hl=en">
+                            <img src="images/instagram.jpg" alt="instagram" width="40" height="40"></a>
+                    </td>
+                    <td>
+                        <a href="https://sg.linkedin.com/edu/university-of-wollongong-10255">
+                            <img src="images/linkedin.png" alt="linkedin" width="50" height="50"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/user/uownow">
+                            <img src="images/youtube.jpg" alt="youtube" width="40" height="40"></a>
+                    </td>
+                    <td>
+                        <a href="https://plus.google.com/+universityofwollongong">
+                            <img src="images/googleplus.png" alt="googleplus" width="40" height="40"></a>
+                    </td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
+
